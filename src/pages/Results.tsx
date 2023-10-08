@@ -68,6 +68,8 @@ import {
   parseShodanResults, ShodanResults
 } from 'utils/result-processor';
 
+import { useTranslation } from 'react-i18next';
+
 const ResultsOuter = styled.div`
   display: flex;
   flex-direction: column;
@@ -152,6 +154,7 @@ const FilterButtons = styled.div`
 `;
 
 const Results = (): JSX.Element => {
+  const { i18n } = useTranslation();
   const startTime = new Date().getTime();
 
   const [ addressType, setAddressType ] = useState<AddressType>('empt');
@@ -572,7 +575,7 @@ const Results = (): JSX.Element => {
   const resultCardData = [
     {
       id: 'location',
-      title: 'Server Location',
+      title: i18n.t('ciao'),
       result: locationResults,
       Component: ServerLocationCard,
       refresh: updateLocationResults,
