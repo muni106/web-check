@@ -891,17 +891,17 @@ Credit to the following users for contributing to Web-Check
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/muni106">
-            <img src="https://avatars.githubusercontent.com/u/65845442?v=4" width="80;" alt="muni106"/>
-            <br />
-            <sub><b>Mounir Samite</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/liss-bot">
             <img src="https://avatars.githubusercontent.com/u/87835202?v=4" width="80;" alt="liss-bot"/>
             <br />
             <sub><b>Alicia Bot</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/muni106">
+            <img src="https://avatars.githubusercontent.com/u/65845442?v=4" width="80;" alt="muni106"/>
+            <br />
+            <sub><b>Mounir Samite</b></sub>
         </a>
     </td>
     <td align="center">
@@ -1062,6 +1062,13 @@ Huge thanks to these wonderful people, who sponsor me on GitHub, their support h
             <img src="https://avatars.githubusercontent.com/u/96497997?v=4" width="80;" alt="jtfinley72"/>
             <br />
             <sub><b>Jtfinley72</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/aldrich8">
+            <img src="https://avatars.githubusercontent.com/u/106362981?v=4" width="80;" alt="aldrich8"/>
+            <br />
+            <sub><b>Aldrich</b></sub>
         </a>
     </td></tr>
 </table>
