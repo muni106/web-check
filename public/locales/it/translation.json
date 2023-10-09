@@ -37,6 +37,16 @@
         "microsoftSmartcardLogon": "Microsoft Smartcard Logon",
         "microsoftDocumentSigning": "Microsoft Document Signing",
         "emailAddress": "Email Address (in Subject Alternative Name)"
-}
-
+    },
+    "domain": {
+        "whois": "Domain Whois",
+        "registeredDomain": "Registered Domain",
+        "creationDate": "Creation Date",
+        "updatedDate": "Updated Date",
+        "registryExp": "Registry Expiry Date",
+        "registryDomain": "Registry Domain ID",
+        "registrarWhoisServer": "Registrar WHOIS Server",
+        "registrar": "Registrar",
+        "registrarIanaID": "Registrar IANA ID"
+    }
 }

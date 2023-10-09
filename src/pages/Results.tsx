@@ -587,7 +587,7 @@ const Results = (): JSX.Element => {
       tags: ['server', 'security'],
     }, {
       id: 'domain',
-      title: 'Domain Whois',
+      title: i18next.t('domain.whois'), 
       result: domainLookupResults,
       Component: DomainLookup,
       refresh: updateDomainLookupResults,
