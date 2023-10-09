@@ -67,8 +67,7 @@ import {
   applyWhoIsResults, Whois,
   parseShodanResults, ShodanResults
 } from 'utils/result-processor';
-
-import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const ResultsOuter = styled.div`
   display: flex;
@@ -154,7 +153,6 @@ const FilterButtons = styled.div`
 `;
 
 const Results = (): JSX.Element => {
-  const { i18n } = useTranslation();
   const startTime = new Date().getTime();
 
   const [ addressType, setAddressType ] = useState<AddressType>('empt');
@@ -575,14 +573,14 @@ const Results = (): JSX.Element => {
   const resultCardData = [
     {
       id: 'location',
-      title: i18n.t('ciao'),
+      title: i18next.t('location.serverLocation'),
       result: locationResults,
       Component: ServerLocationCard,
       refresh: updateLocationResults,
       tags: ['server'],
     }, {
       id: 'ssl',
-      title: 'SSL Certificate',
+      title: i18next.t('ssl.certificate'),
       result: sslResults,
       Component: SslCertCard,
       refresh: updateSslResults,

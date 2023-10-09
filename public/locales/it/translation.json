@@ -1,3 +1,42 @@
 {
-    "ciao": "porcodio"
+    "location": {
+        "serverLocation": "Posizione Server",
+        "city": "Città",
+        "country": "Paese",
+        "timezone": "Fuso Orario",
+        "languages": "Lingue",
+        "currency": "Moneta",
+        "latitude": "Latitudine:",
+        "longitude": "Longitudine:"
+    },
+    "ssl": {
+        "certificate": "Certificato SSL",
+        "subject": "Soggetto",
+        "issuer": "Emittente",
+        "asn1curve": "Curva ASN1",
+        "nistcurve": "Curva NIST",
+        "expires": "Scadenza",
+        "renewed": "Rinnovo",
+        "serial": "Numero Seriale",
+        "fingerprint": "Impronta digitale",
+        "subtitle": "Estensione utilizzo delle chiavi",
+        "serverauth": "Autenticazione Server Web TLS",
+
+        "clientauth": "TLS Web Client Authentication",
+        "codeSigning": "Code Signing",
+        "emailProtection": "Email Protection (SMIME)",
+        "timestamp": "Time Stamping",
+        "ocsp": "OCSP Signing",
+        "endsys": "IPSec End System",
+        "tunnel": "IPSec Tunnel",
+        "userIPsec": "IPSec User",
+        "ike": "IKE Intermediate",
+        "netscapeCrypto": "Netscape Server Gated Crypto",
+        "microsoftServerGatedCrypto": "Microsoft Sever Gated Crypto",
+        "microsoftEncryptedFileSystem": "Microsoft Encrypted File System",
+        "microsoftSmartcardLogon": "Microsoft Smartcard Logon",
+        "microsoftDocumentSigning": "Microsoft Document Signing",
+        "emailAddress": "Email Address (in Subject Alternative Name)"
+}
+
 }
