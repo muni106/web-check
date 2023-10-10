@@ -594,14 +594,14 @@ const Results = (): JSX.Element => {
       tags: ['server'],
     }, {
       id: 'quality',
-      title: 'Quality Summary',
+      title: i18next.t('quality.title'),
       result: lighthouseResults,
       Component: LighthouseCard,
       refresh: updateLighthouseResults,
       tags: ['client'],
     }, {
       id: 'tech-stack',
-      title: 'Tech Stack',
+      title: i18next.t('techStack.title'),
       result: techStackResults,
       Component: TechStackCard,
       refresh: updateTechStackResults,

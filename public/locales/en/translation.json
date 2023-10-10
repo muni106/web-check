@@ -47,5 +47,11 @@
         "registrarWhoisServer": "Registrar WHOIS Server",
         "registrar": "Registrar",
         "registrarIanaID": "Registrar IANA ID"
+    },
+    "quality": {
+        "title": "Quality Summary"
+    },
+    "techStack": {
+        "title": "Tech Stack"
     }
 }
