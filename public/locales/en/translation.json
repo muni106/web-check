@@ -53,5 +53,50 @@
     },
     "techStack": {
         "title": "Tech Stack"
+    },
+    "server-info": {
+        "title": "Server Info"
+    },
+    "cookies": {
+        "title": "Cookies"
+    },
+    "headers": {
+        "title": "Headers"
+    },
+    "dns": {
+        "title": "DNS Records"
+    },
+    "hosts": {
+        "title": "Hosts Names"
+    },
+    "http-sec": {
+        "title": "HTTP Security"
+    },
+    "social-tags": {
+        "title": "Social Tags"
+    },
+    "trace-route": {
+        "title": "Trace Route"
+    },
+    "security-txt": {
+        "title": "Security.Txt"
+    },
+    "dns-server": {
+        "title": "DNS Server"
+    },
+    "firewall": {
+        "title": "Firewall"
+    },
+    "dnssec": {
+        "title": "DNSSEC"
+    },
+    "hsts": {
+        "title": "HSTS Check"
+    },
+    "threats": {
+        "title": "Threats"
+    },
+    "mail-config": {
+        "title": "Email Configuration"
     }
 }
