@@ -90,5 +90,65 @@
     },
     "dnssec": {
         "title": "DNSSEC"
+    },
+    "hsts": {
+        "title": "HSTS Check"
+    },
+    "threats": {
+        "title": "Threats"
+    },
+    "mail-config": {
+        "title": "Email Configuration"
+    },
+    "archives": {
+        "title": "Archive History"
+    },
+    "rank": {
+        "title": "Global Ranking"
+    },
+    "screenshot": {
+        "title": "Screenshot"
+    },
+    "tls-chipher-suites": {
+        "title": "TLS Cipher Suites"
+    },
+    "tls-security-config": {
+        "title": "TLS Security Issues"
+    },
+    "tls-client-support": {
+        "title": "TLS Handshake Simulation" 
+    },
+    "redirects": {
+        "title": "Redirects"
+    },
+    "linked-pages": {
+        "title": "Linked Pages"
+    },
+    "robots-txt": {
+        "title": "Crawl Rules"
+    },
+    "status": {
+        "title": "Server Status"
+    },
+    "ports": {
+        "title": "Open Ports"
+    },
+    "whois": {
+        "title": "Domain Info"
+    },
+    "txt-records": {
+        "title": "TXT Records"
+    },
+    "block-lists": {
+        "title": "Block Lists"
+    },
+    "features": {
+        "title": "Site Features"
+    },
+    "sitemap": {
+        "title": "Pages"
+    },
+    "carbon": {
+        "title": "Carbon Footprint"
     }
 }
