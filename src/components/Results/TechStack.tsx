@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Card } from 'components/Form/Card';
 import Heading from 'components/Form/Heading';
 import colors from 'styles/colors';
+import { useTranslation } from 'react-i18next';
 
 const cardStyles = `
   grid-row: span 2;
@@ -79,6 +80,7 @@ h4 {
 `;
 
 const TechStackCard = (props: {data: any, title: string, actionButtons: any }): JSX.Element => {
+  const { t } = useTranslation(); 
   const technologies = props.data.technologies;
   const iconsCdn = 'https://www.wappalyzer.com/images/icons/';
   return (
@@ -100,7 +102,7 @@ const TechStackCard = (props: {data: any, title: string, actionButtons: any }): 
             <img className="tech-icon" width="10" src={`${iconsCdn}${tech.icon}`} alt={tech.name} />
             <div>
             <p className="tech-description">{tech.description}</p>
-            <p className="tech-website">Learn more at: <a href={tech.website}>{tech.website}</a></p>
+            <p className="tech-website">{t('techStack.learn-more')}<a href={tech.website}>{tech.website}</a></p>
             </div>
           </div>
           
