@@ -12,6 +12,8 @@ import FancyBackground from 'components/misc/FancyBackground';
 import docs from 'utils/docs';
 import colors from 'styles/colors';
 import { determineAddressType } from 'utils/address-type-checker';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const HomeContainer = styled.section`
   display: flex;
@@ -108,9 +110,9 @@ const Home = (): JSX.Element => {
     const addressType = determineAddressType(address);
   
     if (addressType === 'empt') {
-      setErrMsg('Field must not be empty');
+      setErrMsg(i18next.t('home.err.emptyField'));
     } else if (addressType === 'err') {
-      setErrMsg('Must be a valid URL, IPv4 or IPv6 Address');
+      setErrMsg(i18next.t('home.err.invalidURL'));
     } else {
       // if the addressType is 'url' and address doesn't start with 'http://' or 'https://', prepend 'https://'
       if (addressType === 'url' && !/^https?:\/\//i.test(address)) {
@@ -150,6 +152,7 @@ const Home = (): JSX.Element => {
     event.preventDefault();
     submit();
   }
+  const { t } = useTranslation(); 
 
   return (
     <HomeContainer>
@@ -162,7 +165,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="Enter a URL"
+          label= {t('home.enterURL')}
           size="large"
           orientation="vertical"
           placeholder={placeholder}
@@ -175,18 +178,18 @@ const Home = (): JSX.Element => {
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>{t('home.supportedChecks')}</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
-            <li><a href="/about">+ more!</a></li>
+            <li><a href="/about">{t('head.more')}</a></li>
           </ul>
         </div>
         <div className="links">
           <a href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
+            <Button>{t('links.github')}</Button>
           </a>
           <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="Deploy your own private or public instance of Web-Check to Netlify">
-            <Button>Deploy your own</Button>
+            <Button>{t('links.github')}</Button>
           </a>
           <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
             <Button>API Docs</Button>

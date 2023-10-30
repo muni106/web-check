@@ -1,3 +1,5 @@
+import i18next from "i18next";
+
 export interface Doc {
   id: string;
   title: string;
@@ -10,42 +12,39 @@ export interface Doc {
 const docs: Doc[] = [
   {
     id: "get-ip",
-    title: "IP Info",
-    description:
-      "An IP address (Internet Protocol address) is a numerical label assigned to each device connected to a network / the internet. The IP associated with a given domain can be found by querying the Domain Name System (DNS) for the domain's A (address) record.",
-    use: "Finding the IP of a given server is the first step to conducting further investigations, as it allows us to probe the server for additional info. Including creating a detailed map of a target's network infrastructure, pinpointing the physical location of a server, identifying the hosting service, and even discovering other domains that are hosted on the same IP address.",
+    title: i18next.t('home.doc.ipInfo.title'),
+    description: i18next.t('home.doc.ipInfo.description'),
+    use: i18next.t('home.doc.ipInfo.use'),
     resources: [
-      { title: 'Understanding IP Addresses', link: 'https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking'},
-      { title: 'IP Addresses - Wiki', link: 'https://en.wikipedia.org/wiki/IP_address'},
-      { title: 'RFC-791 Internet Protocol', link: 'https://tools.ietf.org/html/rfc791'},
+      { title: i18next.t('home.doc.ipInfo.resources.res1'), link: 'https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking'},
+      { title: i18next.t('home.doc.ipInfo.resources.res2'), link: 'https://en.wikipedia.org/wiki/IP_address'},
+      { title: i18next.t('home.doc.ipInfo.resources.res3'), link: 'https://tools.ietf.org/html/rfc791'},
       { title: 'whatismyipaddress.com', link: 'https://whatismyipaddress.com/'},
     ],
   },
   {
     id: "ssl",
-    title: "SSL Chain",
-    description:
-    "SSL certificates are digital certificates that authenticate the identity of a website or server, enable secure encrypted communication (HTTPS), and establish trust between clients and servers. A valid SSL certificate is required for a website to be able to use the HTTPS protocol, and encrypt user + site data in transit. SSL certificates are issued by Certificate Authorities (CAs), which are trusted third parties that verify the identity and legitimacy of the certificate holder.",  
-    use: "SSL certificates not only provide the assurance that data transmission to and from the website is secure, but they also provide valuable OSINT data. Information from an SSL certificate can include the issuing authority, the domain name, its validity period, and sometimes even organization details. This can be useful for verifying the authenticity of a website, understanding its security setup, or even for discovering associated subdomains or other services.",
+    title: i18next.t('home.ssl.title'),
+    description: i18next.t('home.ssl.description'),
+    use: i18next.t('home.ssl.use'),
     resources: [
-      { title: 'TLS - Wiki', link: 'https://en.wikipedia.org/wiki/Transport_Layer_Security'},
-      { title: 'What is SSL (via Cloudflare learning)', link: 'https://www.cloudflare.com/learning/ssl/what-is-ssl/'},
-      { title: 'RFC-8446 - TLS', link: 'https://tools.ietf.org/html/rfc8446'},
-      { title: 'SSL Checker', link: 'https://www.sslshopper.com/ssl-checker.html'},
+      { title: i18next.t('home.ssl.resouces.res1'), link: 'https://en.wikipedia.org/wiki/Transport_Layer_Security'},
+      { title: i18next.t('home.ssl.resouces.res2'), link: 'https://www.cloudflare.com/learning/ssl/what-is-ssl/'},
+      { title: i18next.t('home.ssl.resouces.res3'), link: 'https://tools.ietf.org/html/rfc8446'},
+      { title: i18next.t('home.ssl.resouces.res4'), link: 'https://www.sslshopper.com/ssl-checker.html'},
     ],
     screenshot: 'https://i.ibb.co/kB7LsV1/wc-ssl.png',
   },
   {
     id: "dns",
-    title: "DNS Records",
-    description:
-      "This task involves looking up the DNS records associated with a specific domain. DNS is a system that translates human-readable domain names into IP addresses that computers use to communicate. Various types of DNS records exist, including A (address), MX (mail exchange), NS (name server), CNAME (canonical name), and TXT (text), among others.",
-    use: "Extracting DNS records can provide a wealth of information in an OSINT investigation. For example, A and AAAA records can disclose IP addresses associated with a domain, potentially revealing the location of servers. MX records can give clues about a domain's email provider. TXT records are often used for various administrative purposes and can sometimes inadvertently leak internal information. Understanding a domain's DNS setup can also be useful in understanding how its online infrastructure is built and managed.",
+    title: i18next.t("home.dns.title"),
+    description: i18next.t("home.dns.description"), 
+    use: i18next.t('home.dns.use'),
     resources: [
-      { title: 'What are DNS records? (via Cloudflare learning)', link: 'https://www.cloudflare.com/learning/dns/dns-records/'},
-      { title: 'DNS Record Types', link: 'https://en.wikipedia.org/wiki/List_of_DNS_record_types'},
-      { title: 'RFC-1035 - DNS', link: 'https://tools.ietf.org/html/rfc1035'},
-      { title: 'DNS Lookup (via MxToolbox)', link: 'https://mxtoolbox.com/DNSLookup.aspx'},
+      { title: i18next.t('home.dns.resources.res1'), link: 'https://www.cloudflare.com/learning/dns/dns-records/'},
+      { title: i18next.t('home.dns.resources.res2'), link: 'https://en.wikipedia.org/wiki/List_of_DNS_record_types'},
+      { title: i18next.t('home.dns.resources.res3'), link: 'https://tools.ietf.org/html/rfc1035'},
+      { title: i18next.t('home.dns.resources.res4'), link: 'https://mxtoolbox.com/DNSLookup.aspx'},
     ],
     screenshot: 'https://i.ibb.co/7Q1kMwM/wc-dns.png',
   },
